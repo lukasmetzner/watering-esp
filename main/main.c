@@ -5,6 +5,7 @@
 #include "mqtt.h"
 #include "wifi.h"
 #include "pump.h"
+#include "moisture.h"
 
 static const char* TAG = "watering-station";
 
@@ -33,6 +34,6 @@ void app_main(void) {
     ESP_ERROR_CHECK(ret);
 
     pump_init();
-
+    moisture_init();
     mqtt_app_start();
 }
