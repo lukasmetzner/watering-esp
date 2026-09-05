@@ -34,7 +34,7 @@ void moisture_init(void) {
     ESP_ERROR_CHECK(adc_oneshot_config_channel(adc_handle, ADC_PIN, &config));
 }
 
-int read_sensor() {
+int read_moisture_sensor() {
     int adc_value;
     esp_err_t err = adc_oneshot_read(adc_handle, ADC_PIN, &adc_value);
     if (err != ESP_OK) {

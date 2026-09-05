@@ -1,5 +1,5 @@
 #pragma once
 
-int read_sensor();
-
 void moisture_init();
+
+int read_moisture_sensor();
