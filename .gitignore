@@ -81,3 +81,11 @@ Desktop.ini
 *.workspace # General workspace files, can be from various tools
 *.suo       # Visual Studio Solution User Options
 *.sln.docstates # Visual Studio
+
+# KiCad-generated files and directories.
+.history/
+*-backups/
+_autosave-*
+fp-info-cache
+~*.lck
+*.kicad_prl
